@@ -1,0 +1,40 @@
+body{font-family:Lora,serif}
+.container{background:#eff0f1;padding:0 1em 2em;max-width:600px;margin:auto}
+.text-center{text-align:center}
+.form-title{text-transform:uppercase;background:#2d3945;padding:1em;color:#fff;margin:0;font-size:1.3em}
+header{border-bottom:6px double #000;margin-bottom:1em}
+header p{color:#a2a0a0}
+header h2{padding-top:20px;margin-top:0}
+fieldset{border:none;padding:0;margin:0}
+legend{text-transform:capitalize;padding-bottom:.5em;font-weight:700;font-size:1.4em}
+.form-wrap-info,.form-wrap-meassge,.form-wrap-news{display:flex}
+.form-wrap-meassge{padding-top:20px}
+.form-wrap-news{align-items:center;padding:.4em 0}
+fieldset>label{padding:1em 0 .6em;display:block}
+.form-wrap-info,.form-wrap-meassge{flex-direction:column;margin-bottom:5px}
+.form-wrap-info label{padding:10px 0}
+hr{margin:1.76em 0}
+button{background:#4ebbb5;border-radius:4px;text-align:center;font-weight:600;cursor:pointer;margin-top:1em;padding:.8em;border:none;width:100%;color:#fff}
+form>fieldset .form-wrap-info:last-of-type input{max-width:150px}
+input[type=text],select,textarea{background:#fff;padding:15px 20px;border-radius:5px;margin-top:10px;color:#a9a8a8;border:1px solid transparent}
+:focus{transition:all 1.5s ease;border:1px solid #2d3945!important;outline:0}
+input[type=text]{text-align:right}
+input[type=text]:focus{text-align:left}
+input:focus::-webkit-input-placeholder{color:transparent}
+input:focus:-moz-placeholder{color:transparent}
+input[placeholder]{text-transform:capitalize;font-style:italic;font-size:smaller;text-align:right}
+input[type=checkbox],input[type=radio]{display:none}
+input[type=checkbox]+label:before,input[type=radio]+label:before{font:16px/1em sans-serif;border:1px solid #333;display:inline-block;vertical-align:top;margin-right:.25em;content:"\00a0";height:16px;width:16px;padding:0}
+input[type=checkbox]+label:before{border-radius:2px}
+input[type=radio]+label:before{border-radius:50%}
+input[type=checkbox]:checked+label:before{content:"\2713"}
+input[type=radio]:checked+label:before{content:"\26AC"}
+input[type=checkbox]:checked+label:before,input[type=radio]:checked+label:before{background:#499ff9;text-align:center;font-weight:500;color:#fff}
+input[type=checkbox]:checked+label:after,input[type=radio]:checked+label:after{font-weight:700}
+input[type=checkbox]:focus+label::before,input[type=radio]:focus+label::before{outline:#3b99fc auto 5px}
+footer p{text-transform:capitalize;font-style:italic}
+@media (min-width:768px){
+.form-wrap-info{flex-direction:row;padding-bottom:.7em}
+.form-wrap-info input{flex:1}
+form>fieldset .form-wrap-info label{flex-basis:220px}
+}

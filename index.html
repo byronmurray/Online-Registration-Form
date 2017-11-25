@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/styles.min.css">
+	<title>Online Registration Form</title>
+</head>
+<body>
+	<h1 class="form-title text-center">The code review</h1>
+	<div class="container">
+
+		<header class="text-center">
+			<h2>Signup for our newsletter</h2>
+			<p>Get the latest news on how your code is doing right in your inbox</p>
+		</header>
+
+		<form action="post">
+			<fieldset>
+				<legend>Contact Information</legend>
+
+				<div class="form-wrap-info">
+					<label for="user_name">Full Name</label>
+					<input type="text" name="user_name" id="user_name" placeholder="Required" required autofocus >
+				</div>
+
+				<div class="form-wrap-info">
+					<label for="user_email">Email Address</label>
+					<input type="text" name="user_email" id="user_email" placeholder="Required" required>
+				</div>
+
+				<div class="form-wrap-info">
+					<label for="user_phone">Phone Number</label>
+					<input type="text" name="user_phone" id="user_phone" placeholder="0221924346">
+				</div>
+
+				<div class="form-wrap-info">
+					<label for="user_address">Street Address</label>
+					<input type="text" name="user_address" id="user_address" placeholder="29 Examaple Street">
+				</div>
+
+				<div class="form-wrap-info">
+					<label for="user_city">City</label>
+					<input type="text" name="user_city" id="user_city" placeholder="City Name">
+				</div>
+
+				<div class="form-wrap-info">
+					<label for="user_state">State</label>
+					<select name="user_state" id="user_state">
+						<option selected="selected" value="100" class="placeholder">Choose State</option>
+						<option value="1">Northland</option>
+						<option value="2">Auckland</option>
+						<option value="3">Waikato</option>
+						<option value="4">Bay of Plenty</option>
+						<option value="5">Gisborne</option>
+						<option value="6">Hawke's Bay</option>
+						<option value="7">Taranaki</option>
+						<option value="8">Wanganui</option>
+						<option value="9">Manawatu</option>
+						<option value="11">Wairarapa</option>
+						<option value="12">Wellington</option>
+						<option value="13">Nelson Bays</option>
+						<option value="14">Marlborough</option>
+						<option value="15">West Coast</option>
+						<option value="16">Canterbury</option>
+						<option value="17">Timaru - Oamaru</option>
+						<option value="18">Otago</option>
+						<option value="19">Southland</option>
+						<option value="20">Other</option>
+						<option value="50">North Island</option>
+						<option value="60">South Island</option>
+						<option value="70">New Zealand</option>
+					</select>
+				</div>
+
+				<div class="form-wrap-info">
+					<label for="user_zip">Zip Code</label>
+					<input type="text" name="user_zip" id="user_zip">
+				</div>
+
+				<hr>
+			</fieldset>
+			
+			<fieldset>
+				<legend>newsletter</legend>
+
+				<label>Select the newsletters you would like to recieve</label>
+				<div class="form-wrap-news">
+					<input type="checkbox" name="newsletter" id="html_news"><label for="html_news">HTML News</label>
+				</div>
+					
+				<div class="form-wrap-news">
+					<input type="checkbox" name="newsletter" id="css_news"><label for="css_news">CSS News</label>
+				</div>
+					
+				<div class="form-wrap-news">
+					<input type="checkbox" name="newsletter" id="java_news"><label for="java_news">Javascript News</label>
+				</div>
+
+				<label>Newsletter format</label>
+				<div class="form-wrap-news">
+					<input type="radio" name="format" id="html_format"><label for="html_format">HTML News</label>
+				</div>
+
+				<div class="form-wrap-news">
+					<input type="radio" name="format" id="plain_format"><label for="plain_format">Plain text</label>
+				</div>
+
+				<div class="form-wrap-meassge">
+					<label for="message">Other topics you'd like to hear about</label>
+					<textarea name="user_message" id="message" cols="30" rows="10"></textarea>
+				</div>
+
+			</fieldset>
+
+			<button type="submit">Sign Up</button>
+
+			<footer class="text-center">
+				<p>Copyright the code review</p>
+			</footer>
+
+		</form>
+
+	</div>
+</body>
+</html>
