@@ -119,6 +119,10 @@ input[type="text"], textarea, select {
 	border: 1px solid transparent;
 }
 
+textarea {
+	padding: 10px 5px 10px 5px;
+}
+
 	:focus {
 		transition: all 1.5s ease;
 	    border: 1px solid #2D3945 !important;
