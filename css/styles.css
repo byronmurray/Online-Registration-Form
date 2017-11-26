@@ -217,6 +217,7 @@ footer p {
 
 		form > fieldset .form-wrap-info label {
 			flex-basis: 220px;
+			align-self: center;
 		}
 
 }
