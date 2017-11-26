@@ -207,7 +207,7 @@ footer p {
 		padding-bottom: .7em;
 	}
 
-		.form-wrap-info input {
+		.form-wrap-info input, select {
 			flex: 1;
 		}
 
